@@ -1,0 +1,57 @@
+// Extend
+@import "button";
+
+.info {
+  @extend %btnStyle;
+  background-color: darkgray;
+}
+
+.alert {
+  @extend %btnStyle;
+  background-color: darkRed;
+}
+
+.success {
+  @extend %btnStyle;
+  background-color: darkgreen;
+}
+
+// Mixins
+// @import "button";
+
+// .info {
+//   @include btnStyle;
+// }
+
+// .alert {
+//   @include btnStyle($color: darkRed);
+// }
+
+// .success {
+//   @include btnStyle($color: darkgreen);
+// }
+
+// Nesting & Modules
+// @use "color";
+// div {
+//   h1 {
+//     background-color: color.$lightpink;
+//   }
+//   h2 {
+//     background-color: color.$rosePink;
+//   }
+//   h3 {
+//     background-color: color.$darkRed;
+//   }
+//   h4 {
+//     background-color: color.$seaGreen;
+//   }
+//   h5 {
+//     background-color: color.$lightGray;
+//   }
+//   a {
+//     h6 {
+//       background-color: color.$magenta;
+//     }
+//   }
+// }
